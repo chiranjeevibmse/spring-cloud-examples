@@ -1,8 +1,4 @@
 spring:
-  application:
-    name: department-service
-  profiles:
-    active: development 
   datasource:
     password: root
     platform: POSTGRESQL
