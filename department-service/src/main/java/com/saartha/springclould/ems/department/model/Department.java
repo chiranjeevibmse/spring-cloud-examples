@@ -1,7 +1,5 @@
 package com.saartha.springclould.ems.department.model;
 
-import java.util.UUID;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -16,7 +14,7 @@ public class Department {
 	@Id
 	@Getter
 	@GeneratedValue
-	private UUID departmentId;
+	private Long departmentId;
 	@Getter
 	@Setter
 	private DEPARTMENTS type;
