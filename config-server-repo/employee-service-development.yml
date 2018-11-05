@@ -1,5 +1,5 @@
 server:
-  port : 8081
+  port: 8081
 spring:
   datasource:
     password: root
@@ -16,3 +16,11 @@ spring:
           lob:
             non_contextual_creation: true
     show-sql: true
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+    hibernate: DEBUG
+    pattern: null
+    console: '%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} - %msg%n'
