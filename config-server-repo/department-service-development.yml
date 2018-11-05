@@ -4,12 +4,12 @@ spring:
   datasource:
     password: root
     platform: POSTGRESQL
-    url: jdbc:postgresql://127.0.0.1:5432/prod
+    url: jdbc:postgresql://127.0.0.1:5432/postgres
     username: postgres
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
     properties:
       hibernate:
         jdbc:
