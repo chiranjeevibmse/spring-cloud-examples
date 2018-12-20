@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.UUID;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import lombok.EqualsAndHashCode;
@@ -14,6 +15,7 @@ import lombok.Setter;
 @EqualsAndHashCode
 public class Employee implements Serializable {
 	@Id
+	@GeneratedValue
 	@Getter
 	private UUID employeeId;
 	@Getter
