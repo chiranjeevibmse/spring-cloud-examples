@@ -1,0 +1,19 @@
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+    root: WARN
+server:
+  port: 8888
+spring:
+  application:
+    name: ems-config-server
+  cloud:
+    config:
+      server:
+        git:
+          #clone-on-start: true
+          searchPaths: config-server-repo
+          uri : file:${HOME}/git/spring-cloud-examples
+          #uri: https://github.com/chiranjeevibmse/spring-cloud-examples.git
