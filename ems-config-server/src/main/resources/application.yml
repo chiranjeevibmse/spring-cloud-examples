@@ -13,7 +13,7 @@ spring:
     config:
       server:
         git:
-          #clone-on-start: true
+          clone-on-start: true
           searchPaths: config-server-repo
           uri : file:${HOME}/git/spring-cloud-examples
           #uri: https://github.com/chiranjeevibmse/spring-cloud-examples.git
