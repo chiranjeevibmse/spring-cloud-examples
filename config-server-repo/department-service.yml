@@ -21,3 +21,5 @@ management:
   endpoint:
     restart:
       enabled: true
+    refresh:
+      enabled: true
