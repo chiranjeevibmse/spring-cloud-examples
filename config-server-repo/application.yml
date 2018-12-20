@@ -35,3 +35,10 @@ management:
       enabled: true
     refresh:
       enabled: true
+      
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://localhost:7777/eureka/
+    healthcheck:
+      enabled: true
