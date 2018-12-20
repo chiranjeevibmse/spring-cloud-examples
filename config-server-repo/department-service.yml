@@ -2,7 +2,7 @@ server:
   port : 8080
 spring:
   datasource:
-    password: root
+    password: wrongPassword
     platform: POSTGRESQL
     url: jdbc:postgresql://127.0.0.1:5432/postgres
     username: postgres
@@ -16,3 +16,8 @@ spring:
           lob:
             non_contextual_creation: true
     show-sql: true
+      
+management:
+  endpoint:
+    restart:
+      enabled: true
