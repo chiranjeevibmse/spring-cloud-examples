@@ -6,3 +6,16 @@ logging:
     hibernate: DEBUG
     pattern: 
       console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+h2:
+    console:
+      enabled: true
+      path: /h2console
+      settings:
+        trace: false
+        web-allow-others: false
+management:
+  endpoint:
+    restart:
+      enabled: true
+    refresh:
+      enabled: true
