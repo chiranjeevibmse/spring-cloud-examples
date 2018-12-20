@@ -27,4 +27,7 @@ public class Employee implements Serializable {
 	@Getter
 	@Setter
 	private GENDER gender;
+	@Getter
+	@Setter
+	private Integer departmentId;
 }
